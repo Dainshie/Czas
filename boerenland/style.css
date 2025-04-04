@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0033a0; /* Głęboki niebieski */
+    color: #ffffff; /* Biały tekst dla kontrastu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.zegar {
+    background-color: #ffffff; /* Białe tło dla kontrastu */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pole {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    color: #0033a0; /* Niebieski tekst */
+    margin-bottom: 0.5rem;
+}
+
+input[type="time"],
+input[type="number"],
+input[type="text"] {
+    padding: 0.6rem 1rem;
+    border: 2px solid #d52b1e; /* Czerwone obramowanie */
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="time"]:focus,
+input[type="number"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0033a0; /* Niebieski podczas fokusu */
+    box-shadow: 0 0 0 3px rgba(0, 51, 160, 0.3);
+}
+
+input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
